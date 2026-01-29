@@ -1,0 +1,26 @@
+# Doxyfile
+# This file describes the settings to be used by the documentation system
+# doxygen (www.doxygen.org) for a project.
+PROJECT_NAME           = "AGAMA"
+PROJECT_BRIEF          = "Action-based galaxy modelling library"
+JAVADOC_AUTOBRIEF      = YES
+EXTRACT_ALL            = NO
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_ANON_NSPACES   = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+INTERNAL_DOCS          = NO
+WARN_IF_UNDOCUMENTED   = NO
+INPUT                  = src
+FILE_PATTERNS          = *.h py_wrapper.cpp
+GENERATE_HTML          = YES
+HTML_OUTPUT            = doxy
+FORMULA_FONTSIZE       = 14
+USE_MATHJAX            = NO
+SEARCHENGINE           = YES
+GENERATE_LATEX         = NO
+PREDEFINED             = HAVE_PYTHON HAVE_UNSIO HAVE_EIGEN HAVE_GLPK HAVE_CVXOPT
+CLASS_DIAGRAMS         = YES
+HAVE_DOT               = NO
